@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>族明</title>
   
   
   <link href="/atom.xml" rel="self"/>
@@ -10,7 +10,7 @@
   <id>http://x6660.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Kevin Ming</name>
     
   </author>
   
