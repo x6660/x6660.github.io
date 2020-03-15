@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>枚举服务</title>
+      <link href="/2020/03/16/hello-world/"/>
+      <url>/2020/03/16/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>枚举是一类程序，它允许用户从一个网络中收集某一类的所有相关信息。本节将介绍DNS枚举和SNMP枚举技术。DNS枚举可以收集本地所有DNS服务和相关条目。DNS枚举可以帮助用户收集目标组织的关键信息，如用户名、计算机名和IP地址等，为了获取这些信息，用户可以使用DNSenum工具。要进行SNMP枚举，用户需要使用SnmpEnum工具。SnmpEnum是一个强大的SNMP枚举工具，它允许用户分析一个网络内SNMP信息传输。</p><h2 id="DNS枚举工具DNSenum"><a href="#DNS枚举工具DNSenum" class="headerlink" title="DNS枚举工具DNSenum"></a>DNS枚举工具DNSenum</h2><p>DNSenum是一款非常强大的域名信息收集工具。它能够通过谷歌或者字典文件猜测可能存在的域名，并对一个网段进行反向查询。它不仅可以查询网站的主机地址信息、域名服务器和邮件交换记录，还可以在域名服务器上执行axfr请求，然后通过谷歌脚本得到扩展域名信息，提取子域名并查询，最后计算C类地址并执行whois查询，执行反向查询，把地址段写入文件。本小节将介绍使用DNSenum工具检查DNS枚举。在终端执行如下所示的命令：</p><pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># dnsenum --enum benet.com</span></code></pre><p>输出的信息显示了DNS服务的详细信息。其中，包括主机地址、域名服务地址和邮件服务地址。如果幸运的话，还可以看到一个区域传输。</p><h3 id="使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。"><a href="#使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。" class="headerlink" title="使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。"></a>使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。</h3><p>–threads [number]：设置用户同时运行多个进程数。<br>-r：允许用户启用递归查询。<br>-d：允许用户设置WHOIS请求之间时间延迟数（单位为秒）。<br>-o：允许用户指定输出位置。<br>-w：允许用户启用WHOIS请求。</p><h2 id="DNS枚举工具fierce"><a href="#DNS枚举工具fierce" class="headerlink" title="DNS枚举工具fierce"></a>DNS枚举工具fierce</h2><p>fierce工具和DNSenum工具性质差不多，其fierce主要是对子域名进行扫描和收集信息的。使用fierce工具获取一个目标主机上所有IP地址和主机信息。执行命令如下所示：</p><pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># fierce -dns baidu.com</span></code></pre><p>输出的信息显示了baidu.com下所有的子域。从倒数第2行，可以看到总共找到133个条目。执行以上命令后，输出的内容较多。但是由于篇幅的原因，部分内容使用省略号（……）取代。</p><h3 id="用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示："><a href="#用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示：" class="headerlink" title="用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示："></a>用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示：</h3><pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># fierce -dns baidu.com -wordlist hosts.txt /tmp/output.txt</span></code></pre><h3 id="SNMP枚举工具Snmpwalk"><a href="#SNMP枚举工具Snmpwalk" class="headerlink" title="SNMP枚举工具Snmpwalk"></a>SNMP枚举工具Snmpwalk</h3><p>Snmpwalk是一个SNMP应用程序。它使用SNMP的GETNEXT请求，查询指定的所有OID（SNMP协议中的对象标识）树信息，并显示给用户。本小节将演示Snmpwalk工具的使用。</p><p>使用Snmpwalk命令测试Windows主机。执行命令如下所示：</p><pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># snmpwalk -c public 192.168.41.138 -v 2c</span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>qwerty</title>
       <link href="/2020/03/15/qwerty/"/>
       <url>/2020/03/15/qwerty/</url>
@@ -23,19 +36,6 @@
             <tag> web </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2020/03/13/hello-world/"/>
-      <url>/2020/03/13/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
-      
-      
       
     </entry>
     

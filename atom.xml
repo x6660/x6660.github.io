@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://x6660.github.io/"/>
-  <updated>2020-03-15T15:55:06.790Z</updated>
+  <updated>2020-03-15T16:18:40.900Z</updated>
   <id>http://x6660.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>枚举服务</title>
+    <link href="http://x6660.github.io/2020/03/16/hello-world/"/>
+    <id>http://x6660.github.io/2020/03/16/hello-world/</id>
+    <published>2020-03-15T16:18:40.920Z</published>
+    <updated>2020-03-15T16:18:40.900Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;枚举是一类程序，它允许用户从一个网络中收集某一类的所有相关信息。本节将介绍DNS枚举和SNMP枚举技术。DNS枚举可以收集本地所有DNS服务和相关条目。DNS枚举可以帮助用户收集目标组织的关键信息，如用户名、计算机名和IP地址等，为了获取这些信息，用户可以使用DNSenum
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>qwerty</title>
@@ -42,29 +65,6 @@
     
     
       <category term="web" scheme="http://x6660.github.io/tags/web/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://x6660.github.io/2020/03/13/hello-world/"/>
-    <id>http://x6660.github.io/2020/03/13/hello-world/</id>
-    <published>2020-03-13T14:08:26.205Z</published>
-    <updated>2020-03-13T14:08:26.205Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
-    
-    </summary>
-    
-    
     
   </entry>
   
