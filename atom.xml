@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://x6660.github.io/"/>
-  <updated>2020-03-13T14:08:26.205Z</updated>
+  <updated>2020-03-15T15:55:06.790Z</updated>
   <id>http://x6660.github.io/</id>
   
   <author>
@@ -15,6 +15,35 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>qwerty</title>
+    <link href="http://x6660.github.io/2020/03/15/qwerty/"/>
+    <id>http://x6660.github.io/2020/03/15/qwerty/</id>
+    <published>2020-03-15T15:51:34.000Z</published>
+    <updated>2020-03-15T15:55:06.790Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;test&quot;&gt;&lt;a href=&quot;#test&quot; class=&quot;headerlink&quot; title=&quot;test&quot;&gt;&lt;/a&gt;test&lt;/h2&gt;&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+    
+        
+      
+    
+    </summary>
+    
+    
+      <category term="oal" scheme="http://x6660.github.io/categories/oal/"/>
+    
+    
+      <category term="web" scheme="http://x6660.github.io/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
