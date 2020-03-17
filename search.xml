@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>kwdmrsf</title>
+      <link href="/2020/03/17/kwdmrsf/"/>
+      <url>/2020/03/17/kwdmrsf/</url>
+      
+        <content type="html"><![CDATA[<h2 id="康威的末日算法"><a href="#康威的末日算法" class="headerlink" title="康威的末日算法"></a>康威的末日算法</h2><p>下面探讨第三题的答案。这道题并没有太多说明，只是问”2199年7月2日是星期几”.有些读者可能会将目光投向电脑屏幕右下角，想打开日历程序偷偷查看2199年的日期。对不起，Windows系统的日历程序只支持到2099年，并不显示之后的年份。</p><p>还是先公布答案吧，2199年7月2日是星期二。准确率是1/7，所以可以靠运气蒙一下。但要想真正求出正确答案，过程并不简单。也许有些读者（很少）会自己设计精妙算法求出答案，但我还是想通过约翰。康威教授的“末日算法”进行说明。</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> 算法 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 末日算法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>qwerty</title>
       <link href="/2020/03/15/qwerty/"/>
       <url>/2020/03/15/qwerty/</url>
