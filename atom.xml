@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://x6660.github.io/"/>
-  <updated>2020-03-17T15:54:32.482Z</updated>
+  <updated>2020-03-19T08:11:43.625Z</updated>
   <id>http://x6660.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第四章 对象与类</title>
+    <link href="http://x6660.github.io/2020/03/19/dui-xiang-yu-lei/"/>
+    <id>http://x6660.github.io/2020/03/19/dui-xiang-yu-lei/</id>
+    <published>2020-03-19T07:31:01.000Z</published>
+    <updated>2020-03-19T08:11:43.625Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;面向对象程序设计概述&lt;br&gt;使用预定义类&lt;br&gt;用户自定义类&lt;br&gt;静态字段与静态方法&lt;br&gt;方法参数&lt;br&gt;对象构造&lt;br&gt;包&lt;br&gt;JAR文件&lt;br&gt;文档注释&lt;br&gt;类设计技巧&lt;/p&gt;
+&lt;p&gt;这一章将主要介绍如下内容：&lt;br&gt;面向对象程序设计入门；&lt;br&gt;如何创建标准J
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>kwdmrsf</title>

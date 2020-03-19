@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>第四章 对象与类</title>
+      <link href="/2020/03/19/dui-xiang-yu-lei/"/>
+      <url>/2020/03/19/dui-xiang-yu-lei/</url>
+      
+        <content type="html"><![CDATA[<p>面向对象程序设计概述<br>使用预定义类<br>用户自定义类<br>静态字段与静态方法<br>方法参数<br>对象构造<br>包<br>JAR文件<br>文档注释<br>类设计技巧</p><p>这一章将主要介绍如下内容：<br>面向对象程序设计入门；<br>如何创建标准Java类库中类的对象；<br>如何编写自己的类。<br>如果你没有面向对象程序设计的应用背景，就一定要认真地阅读本章的内容。面向对象程序设计与面向过程的语言在思维方式上存在着很大的差别。改变思维方式并不是一件很容易的事情，但是为了继续学习Java，一定要掌握对象的概念。<br>对于有经验的C++程序员来说，与上一章逸雅阁，对本章的内容不会感到太陌生，但这两种语言还是存在着很多不同之处，所以要认真阅读本章的后半部分内容，你将发现“C++注释“对于你转换思维方式会很有帮助。</p><h2 id="面向对象程序设计概述"><a href="#面向对象程序设计概述" class="headerlink" title="面向对象程序设计概述"></a>面向对象程序设计概述</h2><p>面向对象程序设计（object-oriented programming,OOP)是当今主流的程序设计范型，它取代了20世纪70年代的”结构化“或过程式编程技术。由于Java是面向对象的，所以你必须熟悉OOP才能够很好地使用Java.<br>面向对象的程序是由对象组成的，每个对象包含对用户公开的特定功能部分和隐藏的实现部分。程序中的很多对象来自标准库，还有一些是自定义的。究竟是自己构造对象，还是从外界购买对象完全取决于开发项目的预算和时间。但是，从根本上说，只要对象能够满足要求，就不必关心其功能到底是如何实现的。<br>传统的结构化程序设计通过一系列的过程（即算法）来求解问题。一旦确定了这些过程，就要开始考虑存储数据的适当方式。这就是Pascal语言的设计者Niklaus Wirth将其著作命名为《算法+数据结构=程序》（Algorithms + Data Structures = Programs,Prentice Hall,1975）的原因。需要注意的是，在Wirth的这个书名中，算法是第一位的，数据结构是第二位的，这就明确地表述了程序员的工作方式。首先要确定如何操作数据，然后再决定如何组织数据的结构，以便于操作数据。而OOP却调换了这个次序，将数据放在第一位，然后再考虑操作数据的算法。<br>对于一些规模较小的问题，将其分解为过程的开发方式比较理想。面向对象更加适合解决规模较大的问题。要想实现一个简单的Web浏览器可能需要大约2000个过程，这些过程可能需要对一组全局数据进行操作。采用面向对象的设计风格，可能只需要大约100个类，每个类平均包含20个方法。后者更易于程序员掌握，也容易找到bug，假设给定对象的数据出错了，在访问这个数据项的20个方法中查找错误要比在2000个过程中查找容易得多。### 类<br>类（class）是构造对象的模板或蓝图。我们可以将类想象成制作小甜饼</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>kwdmrsf</title>
       <link href="/2020/03/17/kwdmrsf/"/>
       <url>/2020/03/17/kwdmrsf/</url>

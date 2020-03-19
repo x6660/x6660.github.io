@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="枚举服务, 族明">
+    <meta name="keywords" content="第四章 对象与类, 族明">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -27,7 +27,7 @@
 </script>
 
 
-    <title>枚举服务 | 族明</title>
+    <title>第四章 对象与类 | 族明</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -255,12 +255,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">枚举服务</h1>
+                    <h1 class="description center-align post-title">第四章 对象与类</h1>
                 </div>
             </div>
         </div>
@@ -375,33 +375,12 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                    <div class="article-tag">
-                        
-                            <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
-                                <span class="chip bg-color">信息安全</span>
-                            </a>
-                        
-                            <a href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%9B%E7%A8%8B/">
-                                <span class="chip bg-color">网络进程</span>
-                            </a>
-                        
-                    </div>
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1/" class="post-category">
-                                信息服务
-                            </a>
-                        
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1/%E6%9E%9A%E4%B8%BE%E6%9C%8D%E5%8A%A1/" class="post-category">
-                                枚举服务
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -410,21 +389,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-13
+                    2020-03-19
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2020-03-16
+                    2020-03-19
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    814
+                    938
                 </div>
                 
 
@@ -447,21 +426,9 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>枚举是一类程序，它允许用户从一个网络中收集某一类的所有相关信息。本节将介绍DNS枚举和SNMP枚举技术。DNS枚举可以收集本地所有DNS服务和相关条目。DNS枚举可以帮助用户收集目标组织的关键信息，如用户名、计算机名和IP地址等，为了获取这些信息，用户可以使用DNSenum工具。要进行SNMP枚举，用户需要使用SnmpEnum工具。SnmpEnum是一个强大的SNMP枚举工具，它允许用户分析一个网络内SNMP信息传输。</p>
-<h2 id="DNS枚举工具DNSenum"><a href="#DNS枚举工具DNSenum" class="headerlink" title="DNS枚举工具DNSenum"></a>DNS枚举工具DNSenum</h2><p>DNSenum是一款非常强大的域名信息收集工具。它能够通过谷歌或者字典文件猜测可能存在的域名，并对一个网段进行反向查询。它不仅可以查询网站的主机地址信息、域名服务器和邮件交换记录，还可以在域名服务器上执行axfr请求，然后通过谷歌脚本得到扩展域名信息，提取子域名并查询，最后计算C类地址并执行whois查询，执行反向查询，把地址段写入文件。本小节将介绍使用DNSenum工具检查DNS枚举。在终端执行如下所示的命令：</p>
-<pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># dnsenum --enum benet.com</span></code></pre>
-<p>输出的信息显示了DNS服务的详细信息。其中，包括主机地址、域名服务地址和邮件服务地址。如果幸运的话，还可以看到一个区域传输。</p>
-<h3 id="使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。"><a href="#使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。" class="headerlink" title="使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。"></a>使用DNSenum工具检查DNS枚举时，可以使用dnsenum的一些附加选项，如下所示。</h3><p>–threads [number]：设置用户同时运行多个进程数。<br>-r：允许用户启用递归查询。<br>-d：允许用户设置WHOIS请求之间时间延迟数（单位为秒）。<br>-o：允许用户指定输出位置。<br>-w：允许用户启用WHOIS请求。</p>
-<h2 id="DNS枚举工具fierce"><a href="#DNS枚举工具fierce" class="headerlink" title="DNS枚举工具fierce"></a>DNS枚举工具fierce</h2><p>fierce工具和DNSenum工具性质差不多，其fierce主要是对子域名进行扫描和收集信息的。使用fierce工具获取一个目标主机上所有IP地址和主机信息。执行命令如下所示：</p>
-<pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># fierce -dns baidu.com</span></code></pre>
-<p>输出的信息显示了baidu.com下所有的子域。从倒数第2行，可以看到总共找到133个条目。执行以上命令后，输出的内容较多。但是由于篇幅的原因，部分内容使用省略号（……）取代。</p>
-<h3 id="用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示："><a href="#用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示：" class="headerlink" title="用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示："></a>用户也可以通过提供一个单词列表执行相同的操作，执行命令如下所示：</h3><pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># fierce -dns baidu.com -wordlist hosts.txt /tmp/output.txt</span></code></pre>
-<h3 id="SNMP枚举工具Snmpwalk"><a href="#SNMP枚举工具Snmpwalk" class="headerlink" title="SNMP枚举工具Snmpwalk"></a>SNMP枚举工具Snmpwalk</h3><p>Snmpwalk是一个SNMP应用程序。它使用SNMP的GETNEXT请求，查询指定的所有OID（SNMP协议中的对象标识）树信息，并显示给用户。本小节将演示Snmpwalk工具的使用。</p>
-<p>使用Snmpwalk命令测试Windows主机。执行命令如下所示：</p>
-<pre class=" language-bash"><code class="language-bash">root@kali:~<span class="token comment" spellcheck="true"># snmpwalk -c public 192.168.41.138 -v 2c</span></code></pre>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+                <p>面向对象程序设计概述<br>使用预定义类<br>用户自定义类<br>静态字段与静态方法<br>方法参数<br>对象构造<br>包<br>JAR文件<br>文档注释<br>类设计技巧</p>
+<p>这一章将主要介绍如下内容：<br>面向对象程序设计入门；<br>如何创建标准Java类库中类的对象；<br>如何编写自己的类。<br>如果你没有面向对象程序设计的应用背景，就一定要认真地阅读本章的内容。面向对象程序设计与面向过程的语言在思维方式上存在着很大的差别。改变思维方式并不是一件很容易的事情，但是为了继续学习Java，一定要掌握对象的概念。<br>对于有经验的C++程序员来说，与上一章逸雅阁，对本章的内容不会感到太陌生，但这两种语言还是存在着很多不同之处，所以要认真阅读本章的后半部分内容，你将发现“C++注释“对于你转换思维方式会很有帮助。</p>
+<h2 id="面向对象程序设计概述"><a href="#面向对象程序设计概述" class="headerlink" title="面向对象程序设计概述"></a>面向对象程序设计概述</h2><p>面向对象程序设计（object-oriented programming,OOP)是当今主流的程序设计范型，它取代了20世纪70年代的”结构化“或过程式编程技术。由于Java是面向对象的，所以你必须熟悉OOP才能够很好地使用Java.<br>面向对象的程序是由对象组成的，每个对象包含对用户公开的特定功能部分和隐藏的实现部分。程序中的很多对象来自标准库，还有一些是自定义的。究竟是自己构造对象，还是从外界购买对象完全取决于开发项目的预算和时间。但是，从根本上说，只要对象能够满足要求，就不必关心其功能到底是如何实现的。<br>传统的结构化程序设计通过一系列的过程（即算法）来求解问题。一旦确定了这些过程，就要开始考虑存储数据的适当方式。这就是Pascal语言的设计者Niklaus Wirth将其著作命名为《算法+数据结构=程序》（Algorithms + Data Structures = Programs,Prentice Hall,1975）的原因。需要注意的是，在Wirth的这个书名中，算法是第一位的，数据结构是第二位的，这就明确地表述了程序员的工作方式。首先要确定如何操作数据，然后再决定如何组织数据的结构，以便于操作数据。而OOP却调换了这个次序，将数据放在第一位，然后再考虑操作数据的算法。<br>对于一些规模较小的问题，将其分解为过程的开发方式比较理想。面向对象更加适合解决规模较大的问题。要想实现一个简单的Web浏览器可能需要大约2000个过程，这些过程可能需要对一组全局数据进行操作。采用面向对象的设计风格，可能只需要大约100个类，每个类平均包含20个方法。后者更易于程序员掌握，也容易找到bug，假设给定对象的数据出错了，在访问这个数据项的20个方法中查找错误要比在2000个过程中查找容易得多。### 类<br>类（class）是构造对象的模板或蓝图。我们可以将类想象成制作小甜饼</p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -505,7 +472,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://x6660.github.io/2020/03/13/hello-world/">http://x6660.github.io/2020/03/13/hello-world/</a>
+                    <a href="http://x6660.github.io/2020/03/19/dui-xiang-yu-lei/">http://x6660.github.io/2020/03/19/dui-xiang-yu-lei/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -542,15 +509,7 @@
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            
-                                <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
-                                    <span class="chip bg-color">信息安全</span>
-                                </a>
-                            
-                                <a href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%9B%E7%A8%8B/">
-                                    <span class="chip bg-color">网络进程</span>
-                                </a>
-                            
+                            <span class="chip bg-color">无标签</span>
                         </div>
                     
                 </div>
@@ -977,52 +936,40 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/15/qwerty/">
+                <a href="/2020/03/19/dui-xiang-yu-lei/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="qwerty">
+                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="第四章 对象与类">
                         
-                        <span class="card-title">qwerty</span>
+                        <span class="card-title">第四章 对象与类</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            test
-        document.querySelectorAll('.github-emoji')
-          .forEach(el => {
-            if (!el.dataset.src) { re
+                            面向对象程序设计概述使用预定义类用户自定义类静态字段与静态方法方法参数对象构造包JAR文件文档注释类设计技巧
+这一章将主要介绍如下内容：面向对象程序设计入门；如何创建标准Java类库中类的对象；如何编写自己的类。如果你没有面向对象程序设计的
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-15
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-19
+                            </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/oal/" class="post-category">
-                                    oal
-                                </a>
-                            
+                            <i class="fas fa-user fa-fw"></i>
+                            Kevin Ming
                             
                         </span>
                     </div>
                 </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/web/">
-                        <span class="chip bg-color">web</span>
-                    </a>
-                    
-                </div>
+
                 
             </div>
         </div>
@@ -1030,54 +977,45 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/13/hello-world/">
+                <a href="/2020/03/17/kwdmrsf/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="枚举服务">
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="kwdmrsf">
                         
-                        <span class="card-title">枚举服务</span>
+                        <span class="card-title">kwdmrsf</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            枚举是一类程序，它允许用户从一个网络中收集某一类的所有相关信息。本节将介绍DNS枚举和SNMP枚举技术。DNS枚举可以收集本地所有DNS服务和相关条目。DNS枚举可以帮助用户收集目标组织的关键信息，如用户名、计算机名和IP地址等，为了获取这
+                            康威的末日算法下面探讨第三题的答案。这道题并没有太多说明，只是问”2199年7月2日是星期几”.有些读者可能会将目光投向电脑屏幕右下角，想打开日历程序偷偷查看2199年的日期。对不起，Windows系统的日历程序只支持到2099年，并不显示
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-13
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-17
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1/" class="post-category">
-                                    信息服务
-                                </a>
-                            
-                            <a href="/categories/%E4%BF%A1%E6%81%AF%E6%9C%8D%E5%8A%A1/%E6%9E%9A%E4%B8%BE%E6%9C%8D%E5%8A%A1/" class="post-category">
-                                    枚举服务
+                            <a href="/categories/%E7%AE%97%E6%B3%95/" class="post-category">
+                                    算法
                                 </a>
                             
                             
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E4%BF%A1%E6%81%AF%E5%AE%89%E5%85%A8/">
-                        <span class="chip bg-color">信息安全</span>
-                    </a>
-                    
-                    <a href="/tags/%E7%BD%91%E7%BB%9C%E8%BF%9B%E7%A8%8B/">
-                        <span class="chip bg-color">网络进程</span>
+                    <a href="/tags/%E6%9C%AB%E6%97%A5%E7%AE%97%E6%B3%95/">
+                        <span class="chip bg-color">末日算法</span>
                     </a>
                     
                 </div>
