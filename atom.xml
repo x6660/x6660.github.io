@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>族明</title>
   
-  
+  <subtitle>致力于信息安全</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://x6660.github.io/"/>
